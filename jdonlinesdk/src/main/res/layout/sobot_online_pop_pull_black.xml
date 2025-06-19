@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_online_pop_pull_black_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sobot_shape_online_pop_header"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <include layout="@layout/sobot_online_pop_header" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="@color/sobot_online_line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="6dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_online_pop_long_pull_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/sobot_pull_black_button_selected"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="@string/online_lahei_long"
+            android:textColor="@color/sobot_online_common_gray1"
+            android:textSize="@dimen/sobot_sp_15" />
+
+        <TextView
+            android:id="@+id/tv_online_pop_24_pull_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:drawableLeft="@drawable/sobot_pull_black_button_no_selected"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="@string/online_lahei_24"
+            android:textColor="@color/sobot_online_common_gray3"
+            android:textSize="@dimen/sobot_sp_15" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_online_pop_pull_black_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/sobot_shape_hollow_border_normal"
+        android:gravity="top"
+        android:hint="@string/online_lahei_reason_hint"
+        android:maxLines="7"
+        android:minLines="7"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:textColor="@color/sobot_online_common_gray1"
+        android:textColorHint="@color/sobot_online_common_gray3"
+        android:textSize="@dimen/sobot_sp_14" />
+
+    <TextView
+        android:id="@+id/tv_online_pop_24_pull_black_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/sobot_shape_online_gray_bg2"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="@string/online_lahei_24_no_rengong"
+        android:textColor="@color/sobot_online_common_gray2"
+        android:textSize="@dimen/sobot_sp_14"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/tv_online_pop_pull_black_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/sobot_shape_online_btn_border_select"
+        android:gravity="center"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:text="@string/online_ok"
+        android:textColor="@color/sobot_online_white_color"
+        android:textSize="@dimen/sobot_sp_16" />
+
+    <TextView
+        android:id="@+id/tv_online_pop_pull_black_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="80dp"
+        android:paddingTop="20dp"
+        android:paddingRight="80dp"
+        android:paddingBottom="20dp"
+        android:text="@string/online_cancle"
+        android:textColor="@color/sobot_online_common_gray1"
+        android:textSize="@dimen/sobot_sp_16" />
+
+</LinearLayout>

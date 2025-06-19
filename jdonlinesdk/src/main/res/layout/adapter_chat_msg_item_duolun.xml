@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/sobot_msg_top_bottom_style"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_msg_item_duolun_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/sobot_online_chat_msg_margin">
+
+        <com.sobot.online.weight.image.SobotRCImageView
+            android:id="@+id/srcv_msg_item_left_user_avatar"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sobot_yonghu_header_def"
+            app:round_as_circle="true" />
+
+        <TextView
+            android:id="@+id/tv_msg_item_duolun_left_content"
+            style="@style/sobot_msg_left_content_ll_bg_style"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/sobot_left_msg_text_color"
+            android:textSize="@dimen/sobot_sp_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_msg_item_duolun_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/sobot_online_chat_msg_margin"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/iv_msg_item_send_loading"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/progressbar_circle_loading" />
+
+        <ImageView
+            android:id="@+id/iv_msg_item_send_failure"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@id/srcv_msg_item_right_user_avatar"
+            android:src="@drawable/sobot_send_failure_icon"
+            android:visibility="gone" />
+
+        <LinearLayout
+            style="@style/sobot_msg_right_content_ll_bg_style"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_msg_item_duolun_right_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/sobot_right_msg_text_color"
+                android:textSize="@dimen/sobot_sp_14" />
+
+            <com.sobot.online.weight.horizontalgridpage.HorizontalGridPage
+                android:id="@+id/pageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/ll_sobot_template_item_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/sobot_template4_temp_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/sobot_online_common_gray1"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/sobot_template4_thumbnail"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="12dp"
+                    android:contentDescription="@null"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/sobot_template4_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/sobot_right_msg_text_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/sobot_template4_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:ellipsize="end"
+                    android:maxLines="4"
+                    android:textColor="@color/sobot_right_msg_text_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/sobot_template4_anchor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/online_see_detail"
+                    android:textColor="@color/sobot_color_rlink"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <com.sobot.online.weight.image.SobotRCImageView
+            android:id="@+id/srcv_msg_item_right_user_avatar"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right|bottom"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sobot_service_header_def"
+            app:round_as_circle="true" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:layout_marginLeft="82dp"
+        android:background="@color/sobot_online_white_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="    "
+            android:textColor="@color/sobot_online_common_gray1"
+            android:textSize="@dimen/sobot_sp_14" />
+
+        <EditText
+            android:id="@+id/et_item_user_add_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:textColor="@color/sobot_online_common_gray1"
+            android:textColorHint="@color/sobot_online_common_gray3"
+            android:textSize="@dimen/sobot_sp_14" />
+
+        <ImageView
+            android:id="@+id/iv_item_user_add_info_del"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="13dp"
+            android:padding="2dp"
+            android:src="@drawable/sobot_delete_second_icon" />
+    </LinearLayout>
+</LinearLayout>

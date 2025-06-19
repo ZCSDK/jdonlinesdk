@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sobot_app_half_transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_pop_rebot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sobot_online_white_color"
+        android:paddingLeft="15dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_pop_knowledge_swith_rebot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sobot_online_white_color"></androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sobot_online_white_color"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_sobot_online_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/sobot_shape_online_btn_border_select"
+            android:gravity="center"
+            android:paddingTop="13dp"
+            android:paddingBottom="13dp"
+            android:text="@string/online_ok"
+            android:textColor="@color/sobot_online_white_color"
+            android:textSize="@dimen/sobot_sp_16" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sobot_online_app_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/sobot_app_status_bar_color"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp">
+
+
+        <TextView
+            android:id="@+id/sobot_online_tab_back_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/sobot_online_back_icon"
+            android:paddingLeft="15dp"
+            android:paddingTop="4dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="4dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_nav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_online_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="4dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="4dp">
+
+                <TextView
+                    android:id="@+id/tv_online_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sobot_message_online"
+                    android:textSize="@dimen/sobot_sp_15" />
+
+                <View
+                    android:id="@+id/view_online_msg_bottom"
+                    android:layout_width="20dp"
+                    android:layout_height="3dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/sobot_online_nav_indicator_color" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_history_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="4dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="4dp">
+
+                <TextView
+                    android:id="@+id/tv_history_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/sobot_online_tab_back_tv"
+                    android:text="@string/sobot_message_record"
+                    android:textSize="@dimen/sobot_sp_15" />
+
+                <View
+                    android:id="@+id/view_history_msg_bottom"
+                    android:layout_width="20dp"
+                    android:layout_height="3dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/sobot_online_nav_indicator_color" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/sobot_online_tab_hearder_image_fl"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:visibility="gone">
+
+            <com.sobot.online.weight.image.SobotRCImageView
+                android:id="@+id/sobot_online_tab_hearder_image_srcv"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sobot_service_header_def"
+                app:round_as_circle="true"
+                app:stroke_color="@color/sobot_online_white_color"
+                app:stroke_width="0.6dp" />
+
+            <ImageView
+                android:id="@+id/sobot_online_tab_status_iv"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_gravity="right"
+                android:background="@drawable/sobot_status_green" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_message"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/rl_tip"></FrameLayout>
+
+
+</LinearLayout>

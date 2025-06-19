@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--通用头部 高度-->
+    <dimen name="sobot_base_header_height">44dp</dimen>
+    <!--通用头部 标题大小-->
+    <dimen name="sobot_base_header_title_sp">17dp</dimen>
+    <dimen name="sobot_line_height">0.4dp</dimen>
+    <dimen name="sobot_sp_10">10sp</dimen>
+    <dimen name="sobot_sp_11">11sp</dimen>
+    <dimen name="sobot_sp_12">12sp</dimen>
+    <dimen name="sobot_sp_13">13sp</dimen>
+    <dimen name="sobot_sp_14">14sp</dimen>
+    <dimen name="sobot_sp_15">15sp</dimen>
+    <dimen name="sobot_sp_16">16sp</dimen>
+    <dimen name="sobot_sp_17">17sp</dimen>
+    <dimen name="sobot_sp_18">18sp</dimen>
+    <dimen name="sobot_sp_19">19sp</dimen>
+    <dimen name="sobot_sp_20">20sp</dimen>
+    <dimen name="sobot_sp_21">21sp</dimen>
+    <dimen name="sobot_sp_22">22sp</dimen>
+    <dimen name="sobot_sp_23">23sp</dimen>
+    <dimen name="sobot_sp_24">24sp</dimen>
+    <dimen name="sobot_sp_25">25sp</dimen>
+
+    <dimen name="sobot_meau_text_font_large">20sp</dimen>
+    <dimen name="sobot_min_panel_height">220dp</dimen>
+    <dimen name="sobot_max_panel_height">380dp</dimen>
+    <dimen name="sobot_min_keyboard_height">80dp</dimen>
+    <dimen name="sobot_item_plus_size_default">84dp</dimen>
+    <dimen name="sobot_item_emoticon_size_default">32dp</dimen>
+    <!--在线客服 通用头部 高度-->
+    <dimen name="sobot_online_base_header_height">@dimen/sobot_base_header_height</dimen>
+    <!--在线客服 通用头部 title 大小-->
+    <dimen name="sobot_online_base_header_title_sp">@dimen/sobot_base_header_title_sp</dimen>
+
+    <!--聊天页 头像和消息气泡之间的间距-->
+    <dimen name="sobot_chat_adapter_msg_content_margin">8dp</dimen>
+    <!--聊天页 消息气泡和手机边缘之间的间距-->
+    <dimen name="sobot_online_chat_msg_margin">53dp</dimen>
+
+
+    <!-- 顶部按钮栏高度 -->
+    <dimen name="pickerview_topbar_height">44dp</dimen>
+
+    <!-- 顶部按钮padding -->
+    <dimen name="pickerview_topbar_padding">20dp</dimen>
+
+    <!-- 顶部按钮文字大小 -->
+    <dimen name="pickerview_topbar_btn_textsize">17sp</dimen>
+    <dimen name="pickerview_topbar_title_textsize">18sp</dimen>
+    <!-- 选项文字大小 -->
+    <dimen name="pickerview_textsize">20sp</dimen>
+
+
+
+
+</resources>

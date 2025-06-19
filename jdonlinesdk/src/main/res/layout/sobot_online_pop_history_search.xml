@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_online_pop_search_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sobot_shape_online_pop_header"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sobot_app_status_bar_color"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp">
+
+        <EditText
+            android:id="@+id/et_online_search_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/sobot_shape_online_gray_bg"
+            android:drawableLeft="@drawable/search_online_search_icon"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="@string/sobot_search"
+            android:paddingLeft="12dp"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:paddingBottom="10dp"
+            android:textColor="@color/sobot_online_common_gray1"
+            android:textSize="@dimen/sobot_sp_14" />
+
+        <TextView
+            android:id="@+id/tv_online_pop_search_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:drawablePadding="4dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:text="@string/online_cancle"
+            android:textColor="@color/sobot_online_common_gray1"
+            android:textSize="@dimen/sobot_sp_14" />
+    </LinearLayout>
+
+    <com.sobot.online.weight.recyclerview.swipemenu.SobotSwipeMenuRecyclerView
+        android:id="@+id/ssmrv_online_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/v_online_history_split">
+
+    </com.sobot.online.weight.recyclerview.swipemenu.SobotSwipeMenuRecyclerView>
+
+</LinearLayout>

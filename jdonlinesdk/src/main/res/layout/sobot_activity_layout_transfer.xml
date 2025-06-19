@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sobot_online_app_bg_color">
+
+    <include layout="@layout/sobot_online_base_header" />
+
+    <EditText
+        android:id="@+id/et_online_search_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_sobot_online_base_header_root"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/sobot_shape_online_gray_bg"
+        android:drawableLeft="@drawable/search_online_search_icon"
+        android:drawablePadding="8dp"
+        android:hint="@string/online_search_keyword"
+        android:paddingLeft="12dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:singleLine="true"
+        android:textColor="@color/sobot_online_common_gray1"
+        android:textSize="@dimen/sobot_sp_14" />
+
+    <TextView
+        android:id="@+id/tv_online_transfer_kefu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_online_search_content"
+        android:layout_marginLeft="15dp"
+        android:paddingTop="13dp"
+        android:paddingBottom="15dp"
+        android:text="@string/online_kefu"
+        android:textColor="@color/sobot_online_color"
+        android:textSize="@dimen/sobot_sp_14" />
+
+    <TextView
+        android:id="@+id/tv_online_transfer_kefu_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_online_search_content"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/tv_online_transfer_kefu"
+        android:paddingTop="13dp"
+        android:paddingBottom="15dp"
+        android:text="@string/online_kefu_group"
+        android:textColor="@color/sobot_online_common_gray2"
+        android:textSize="@dimen/sobot_sp_14" />
+
+    <TextView
+        android:id="@+id/tv_online_transfer_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_online_transfer_kefu_group"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="9dp"
+        android:drawableLeft="@drawable/sobot_refresh"
+        android:drawablePadding="6dp"
+        android:padding="8dp"
+        android:text="@string/online_refresh" />
+
+
+    <View
+        android:id="@+id/v_online_transfer_split"
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:layout_below="@id/tv_online_transfer_kefu"
+        android:background="@color/sobot_online_line_color" />
+
+
+    <com.sobot.online.weight.recyclerview.swipemenu.SobotSwipeMenuRecyclerView
+        android:id="@+id/ssmrv_online_transfer_kefu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/v_online_transfer_split">
+
+    </com.sobot.online.weight.recyclerview.swipemenu.SobotSwipeMenuRecyclerView>
+
+    <com.sobot.online.weight.recyclerview.swipemenu.SobotSwipeMenuRecyclerView
+        android:id="@+id/ssmrv_online_transfer_kefu_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/v_online_transfer_split"
+        android:visibility="gone">
+
+    </com.sobot.online.weight.recyclerview.swipemenu.SobotSwipeMenuRecyclerView>
+
+</RelativeLayout>

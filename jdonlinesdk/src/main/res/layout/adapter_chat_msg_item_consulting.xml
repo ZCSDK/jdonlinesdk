@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/sobot_msg_top_bottom_style"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_msg_item_consulting_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/sobot_online_chat_msg_margin">
+
+        <com.sobot.online.weight.image.SobotRCImageView
+            android:id="@+id/srcv_msg_item_left_user_avatar"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sobot_yonghu_header_def"
+            app:round_as_circle="true" />
+
+        <RelativeLayout
+            android:id="@+id/rl_left_content"
+            style="@style/sobot_msg_left_content_ll_bg_style">
+
+            <TextView
+                android:id="@+id/tv_msg_item_left_consulting_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/sobot_left_msg_text_color"
+                android:textSize="@dimen/sobot_sp_14" />
+
+            <ImageView
+                android:id="@+id/iv_msg_item_left_consulting_thumbnail"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_below="@id/tv_msg_item_left_consulting_title"
+                android:layout_marginRight="4dp" />
+
+            <TextView
+                android:id="@+id/tv_msg_item_left_consulting_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_msg_item_left_consulting_title"
+                android:layout_toRightOf="@id/iv_msg_item_left_consulting_thumbnail"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/sobot_left_msg_text_color"
+                android:textSize="@dimen/sobot_sp_14" />
+
+            <TextView
+                android:id="@+id/tv_msg_item_left_consulting_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_msg_item_left_consulting_description"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/iv_msg_item_left_consulting_thumbnail"
+                android:textColor="@color/sobot_online_color"
+                android:textSize="@dimen/sobot_sp_14" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_msg_item_consulting_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/sobot_online_chat_msg_margin"
+        android:visibility="gone">
+
+        <com.sobot.online.weight.image.SobotRCImageView
+            android:id="@+id/srcv_msg_item_right_user_avatar"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sobot_service_header_def"
+            app:round_as_circle="true" />
+
+        <RelativeLayout
+            android:id="@+id/rl_right_content"
+            style="@style/sobot_msg_right_content_ll_bg_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/srcv_msg_item_right_user_avatar">
+
+            <TextView
+                android:id="@+id/tv_msg_item_right_consulting_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/sobot_right_msg_text_color"
+                android:textSize="@dimen/sobot_sp_14" />
+
+            <ImageView
+                android:id="@+id/iv_msg_item_right_consulting_thumbnail"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_below="@id/tv_msg_item_right_consulting_title"
+                android:layout_marginRight="4dp" />
+
+            <TextView
+                android:id="@+id/tv_msg_item_right_consulting_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_msg_item_right_consulting_title"
+                android:layout_toRightOf="@id/iv_msg_item_right_consulting_thumbnail"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/sobot_right_msg_text_color"
+                android:textSize="@dimen/sobot_sp_14" />
+
+            <TextView
+                android:id="@+id/tv_msg_item_right_consulting_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_msg_item_right_consulting_description"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/iv_msg_item_right_consulting_thumbnail"
+                android:textColor="@color/sobot_right_msg_text_color"
+                android:textSize="@dimen/sobot_sp_14" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

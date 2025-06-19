@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--在线客服 主题色 默认绿色 -->
+    <color name="sobot_online_color">#ED2123</color>
+    <!--在线客服  默认线条颜色 -->
+    <color name="sobot_online_line_color">@color/sobot_app_line_color</color>
+    <!--在线客服  白色 -->
+    <color name="sobot_online_white_color">#FFFFFF</color>
+    <!--在线客服  红色 -->
+    <color name="sobot_online_red_color">#F15745</color>
+    <!--在线客服  黄色 -->
+    <color name="sobot_online_yellow_color">#F8C46E</color>
+    <!--在线客服  蓝色 -->
+    <color name="sobot_online_blue_color">#007AFF</color>
+    <!--警告色-->
+    <color name="sobot_common_red">#F06A7C</color>
+    <!-- 透明 -->
+    <color name="sobot_app_transparent">#00000000</color>
+    <!-- 透明 -->
+    <color name="sobot_app_half_transparent">#60000000</color>
+    <!-- 线条通用颜色-->
+    <color name="sobot_app_line_color">#EAEAEA</color>
+
+    <color name="sobot_online_transparent">#00000000</color>
+    <!-- 一级文字 颜色 -->
+    <color name="sobot_online_common_gray1">#15192A</color>
+    <!-- 二级文字 颜色 -->
+    <color name="sobot_online_common_gray2">#484B58</color>
+    <!-- 三级文字 颜色 -->
+    <color name="sobot_online_common_gray3">#A7A4A4</color>
+    <!-- 四级文字 颜色 提示性文本：时间，输入提示 -->
+    <color name="sobot_online_common_gray4">#CCCCCC</color>
+    <color name="sobot_online_common_gray5">#666666</color>
+
+    <!--在线客服 界面 通用背景颜色 -->
+    <color name="sobot_online_app_bg_color">#FFFFFF</color>
+    <!-- 二级背景色 -->
+    <color name="sobot_online_app_bg2_color">#F6F8FC</color>
+    <!-- 搜索框背景颜色-->
+    <color name="sobot_online_search_bg_color">#F6F8FC</color>
+    <color name="sobot_common_post_msg_gray">#E4EAF2</color>
+
+    <!--在线客服 通用头部 背景颜色-->
+    <color name="sobot_online_base_header_bg_color">#FFFFFF</color>
+    <!-- 状态栏颜色-->
+    <color name="sobot_app_status_bar_color">@color/sobot_online_base_header_bg_color</color>
+    <!--在线客服 通用头部 左侧文字颜色-->
+    <color name="sobot_online_base_header_left_wz_color">#15192A</color>
+    <!--在线客服 通用头部 右侧文字颜色-->
+    <color name="sobot_online_base_header_right_wz_color">#15192A</color>
+    <!--在线客服 通用头部 中间标题文字颜色-->
+    <color name="sobot_online_base_header_title_color">#15192A</color>
+    <!--在线客服 通用头部 分割线颜色-->
+    <color name="sobot_online_base_header_split_color">@color/sobot_online_line_color</color>
+
+
+    <!-- 导航栏切换 背景条 颜色  -->
+    <color name="sobot_online_nav_bg_color">@color/sobot_online_base_header_bg_color</color>
+    <!-- 导航栏切换 文字下边 横线 颜色  -->
+    <color name="sobot_online_nav_indicator_color">@color/sobot_online_color</color>
+    <!-- 导航栏切换 选中 字体 颜色  -->
+    <color name="sobot_online_nav_sel_tx_color">@color/sobot_online_common_gray1</color>
+    <!-- 导航栏切换  未选中字体 颜色  -->
+    <color name="sobot_online_nav_tx_color">@color/sobot_online_common_gray2</color>
+
+    <!--在线客服  红色 侧滑菜单 关闭-->
+    <color name="sobot_online_red_close_color">#DD3B3B</color>
+    <!--在线客服  黄色 侧滑菜单 星标 -->
+    <color name="sobot_online_yellow_star_target_color">#F5AE4F</color>
+    <!--在线客服  灰色 侧滑菜单 会话总结 -->
+    <color name="sobot_online_gray_summary_color">#ADADAD</color>
+
+    <!--在线客服 聊天主页面  -->
+    <!-- 聊天页状态栏颜色 -->
+    <color name="sobot_chat_status_bar_color">#F6F8FC</color>
+    <!-- 文件消息气泡颜色 -->
+    <color name="sobot_chat_file_bgColor">@color/sobot_online_color</color>
+    <!-- 消息气泡左侧背景默认颜色 -->
+    <color name="sobot_chat_left_bgColor">@color/sobot_online_white_color</color>
+    <!-- 消息气泡右侧背景默认颜色 -->
+    <color name="sobot_chat_right_bgColor">#0DAEAF</color>
+    <!--文本消息气泡 左侧文字 颜色 -->
+    <color name="sobot_left_msg_text_color">@color/sobot_online_common_gray1</color>
+    <!--文本消息气泡 右侧文字 颜色 -->
+    <color name="sobot_right_msg_text_color">@color/sobot_online_white_color</color>
+    <!-- 超链接颜色 左边 -->
+    <color name="sobot_color_link">@color/sobot_online_blue_color</color>
+    <!-- 超链接颜色 右边 -->
+    <color name="sobot_color_rlink">@color/sobot_online_yellow_color</color>
+    <!-- 聊天界面提醒背景颜色-->
+    <color name="sobot_chat_remind_bg">#59FFFFFF</color>
+    <!-- 聊天界面提醒的字体颜色-->
+    <color name="sobot_chat_remind_text_color">@color/sobot_online_common_gray3</color>
+    <!-- 聊天界面提醒的超链接文字颜色-->
+    <color name="sobot_chat_remind_link_color">@color/sobot_online_blue_color</color>
+    <!--消息气泡 时间 颜色 -->
+    <color name="sobot_msg_time_color">@color/sobot_online_common_gray3</color>
+
+
+    <!--自定义标签背景颜色-->
+    <color name="sobot_lable_bg_color">@color/sobot_online_app_bg2_color</color>
+    <!--自定义标签边框默认颜色-->
+    <color name="sobot_lable_stroke_color">@color/sobot_common_gray2</color>
+    <!--自定义标签边框选中颜色-->
+    <color name="sobot_lable_select_stroke_color">@color/sobot_online_yellow_color</color>
+    <!--自定义标签默认填充颜色-->
+    <color name="sobot_lable_nomal_bg_color">@color/sobot_online_app_bg2_color</color>
+    <!--自定义标签选中填充颜色-->
+    <color name="sobot_lable_press_bg_color">@color/sobot_online_app_bg2_color</color>
+    <!--自定义标签字体颜色-->
+    <color name="sobot_lable_text_color">@color/sobot_online_common_gray1</color>
+
+    <!--多轮会话 标签和 字体颜色-->
+    <color name="sobot_template2_lable_text_color">@color/sobot_online_color</color>
+
+    <!--下拉刷新状态 文字 颜色-->
+    <color name="Sobot_refresh_status_textview_color">@color/sobot_online_common_gray1</color>
+
+    <!--toast 背景颜色-->
+    <color name="sobot_toast_bg_color">#15192A</color>
+    <!--toast 文字颜色-->
+    <color name="sobot_toast_text_color">@color/sobot_online_white_color</color>
+
+    <!-- 超链接颜色-->
+    <color name="sobot_link">@color/sobot_online_blue_color</color>
+
+    <!--pop弹窗背景颜色-->
+    <color name="sobot_pop_bg">@color/sobot_online_white_color</color>
+    <color name="sobot_pop_head_bg">@color/sobot_online_white_color</color>
+
+    <color name="pickerview_timebtn">@color/sobot_online_color</color>
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <color name="pickerview_bgColor_overlay">#60000000</color>
+    <color name="pickerview_bgColor_default">#FFFFFFFF</color>
+
+</resources>
+

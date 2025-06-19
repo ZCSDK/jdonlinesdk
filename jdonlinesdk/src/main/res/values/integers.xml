@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="sobot_emotiocon_line">4</integer>
+    <integer name="sobot_emotiocon_row">9</integer>
+    <integer name="sobot_plus_menu_line">2</integer>
+    <integer name="sobot_plus_menu_row">3</integer>
+
+    <integer name="animation_default_duration">300</integer>
+
+</resources>

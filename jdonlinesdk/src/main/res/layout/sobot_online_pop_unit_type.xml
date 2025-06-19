@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sobot_shape_online_pop_header"
+    android:orientation="vertical">
+
+    <include layout="@layout/sobot_online_pop_header" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sobot_line_height"
+        android:background="@color/sobot_online_line_color" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_online_select_unit_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sobot_app_status_bar_color"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sobot_line_height"
+        android:background="@color/sobot_online_line_color" />
+
+    <com.sobot.online.weight.recyclerview.swipemenu.SobotSwipeMenuRecyclerView
+        android:id="@+id/ssmrv_online_unit_type"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </com.sobot.online.weight.recyclerview.swipemenu.SobotSwipeMenuRecyclerView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sobot_line_height"
+        android:background="@color/sobot_online_line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/online_selected"
+            android:textColor="@color/sobot_online_common_gray2"
+            android:textSize="@dimen/sobot_sp_14" />
+
+        <TextView
+            android:id="@+id/tv_pop_user_select_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/sobot_online_common_gray2"
+            android:textSize="@dimen/sobot_sp_14" />
+
+        <TextView
+            android:id="@+id/tv_pop_user_select_commit"
+            android:layout_width="165dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/sobot_shape_online_btn_border_select"
+            android:gravity="center"
+            android:text="@string/online_ok"
+            android:textColor="@color/sobot_online_white_color"
+            android:textSize="@dimen/sobot_sp_16" />
+    </LinearLayout>
+
+</LinearLayout>

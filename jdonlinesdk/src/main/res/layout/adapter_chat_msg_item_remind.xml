@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/sobot_msg_top_bottom_style"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_msg_item_remind_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="6dp"
+        android:textColor="@color/sobot_online_common_gray4"
+        android:textSize="11.5sp" />
+
+    <TextView
+        android:id="@+id/tv_msg_item_remind_content"
+        style="@style/sobot_center_remind_style"
+        android:gravity="center"
+        android:textSize="@dimen/sobot_sp_12" />
+
+</LinearLayout>

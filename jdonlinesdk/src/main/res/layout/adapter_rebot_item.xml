@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_common_pop_item_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:textColor="@color/sobot_online_common_gray2"
+        android:textSize="@dimen/sobot_sp_15" />
+
+    <CheckBox
+        android:id="@+id/cb_common_pop_item_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:button="@drawable/sobot_checkbox_button_selector" />
+
+</LinearLayout>

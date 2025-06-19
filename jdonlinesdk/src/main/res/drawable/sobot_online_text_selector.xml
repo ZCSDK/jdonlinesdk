@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?><!--定义一个文字颜色选中变色的选择器-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/sobot_online_color" android:state_checked="true" android:state_focused="false" />
+    <item android:color="@color/sobot_online_color" android:state_focused="false" android:state_pressed="true" />
+    <!-- 默认时的颜色-->
+    <item android:color="@color/sobot_online_common_gray3" />
+</selector>

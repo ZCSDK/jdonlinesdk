@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="4dp"
+    android:background="@color/sobot_online_app_bg2_color"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="4dp">
+
+    <TextView
+        android:id="@+id/tv_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:textColor="@color/sobot_online_common_gray1"
+        android:textSize="@dimen/sobot_sp_13" />
+
+
+    <ImageView
+        android:id="@+id/iv_item_delete"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:src="@drawable/sobot_delete_second_icon" />
+
+
+</LinearLayout>

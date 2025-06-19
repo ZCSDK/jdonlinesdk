@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/sobot_online_app_bg_color"
+    android:gravity="center_vertical"
+    android:paddingLeft="15dp">
+
+    <com.sobot.online.weight.image.SobotRCImageView
+        android:id="@+id/srcv_reception_user_avatar"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sobot_yonghu_header_def"
+        app:round_as_circle="true" />
+
+
+    <TextView
+        android:id="@+id/tv_reception_last_msg_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/sobot_online_common_gray4"
+        android:textSize="@dimen/sobot_sp_12" />
+
+    <TextView
+        android:id="@+id/tv_reception_noread_msg_count"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_below="@id/tv_reception_last_msg_time"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/sobot_red_point"
+        android:gravity="center"
+        android:text="5"
+        android:textColor="@color/sobot_online_white_color"
+        android:textSize="@dimen/sobot_sp_10"
+        android:visibility="gone"
+        tools:text="4" />
+
+    <ImageView
+        android:id="@+id/iv_reception_user_mark"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@id/srcv_reception_user_avatar"
+        android:src="@drawable/sobot_online_biaoji_sel"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_reception_user_nike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/tv_reception_last_msg_time"
+        android:layout_toRightOf="@id/iv_reception_user_mark"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/sobot_online_common_gray1"
+        android:textSize="@dimen/sobot_sp_15" />
+
+    <TextView
+        android:id="@+id/tv_reception_last_msg_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_reception_user_nike"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/tv_reception_last_msg_time"
+        android:layout_toRightOf="@id/srcv_reception_user_avatar"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/sobot_online_common_gray3"
+        android:textSize="@dimen/sobot_sp_12" />
+
+</RelativeLayout>

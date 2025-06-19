@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/sobot_online_app_bg_color"
+    android:gravity="center_vertical"
+    android:paddingLeft="15dp"
+    android:paddingTop="10dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="10dp">
+
+
+    <TextView
+        android:id="@+id/tv_transfer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/sobot_online_common_gray1"
+        android:textSize="@dimen/sobot_sp_15" />
+
+
+    <TextView
+        android:id="@+id/tv_transfer_kefu_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_transfer_name"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/sobot_online_common_gray3"
+        android:textSize="@dimen/sobot_sp_12" />
+
+    <TextView
+        android:id="@+id/tv_transfer_invite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/sobot_shape_hollow_border"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingTop="4dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="4dp"
+        android:text="@string/online_transfer"
+        android:textColor="@color/sobot_online_color"
+        android:textSize="@dimen/sobot_sp_14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:layout_below="@id/tv_transfer_kefu_info"
+        android:layout_marginTop="10dp"
+        android:background="@color/sobot_online_white_color" />
+</RelativeLayout>

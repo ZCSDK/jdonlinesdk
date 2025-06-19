@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sobot.online">
+
+
+    <application>
+        <activity
+            android:name=".activity.SobotAuthorActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:theme="@style/sobot_activity_def_theme"
+            android:screenOrientation="behind"/>
+        <activity
+            android:name=".activity.SobotCustomerServiceChatActivity"
+            android:theme="@style/sobot_activity_def_theme"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".dialog.SobotOnlineHistorySearchActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:theme="@style/AppThemeDialogIsTranslucent" />
+        <activity
+            android:name=".dialog.SobotOnlineReceptionSearchActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:theme="@style/AppThemeDialogIsTranslucent" />
+        <activity
+            android:name=".activity.SobotOnlineTransferActivity"
+            android:theme="@style/sobot_activity_def_theme"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".dialog.SobotOnlineScreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:theme="@style/AppThemeDialogIsTranslucent" />
+        <activity
+            android:name=".activity.SobotOnlineChatActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/sobot_activity_def_theme"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.sobot.chatActivity.start"/>
+                <category android:name="chatactivity_category"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.SobotOnlinePullBlackActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:theme="@style/AppThemeDialogIsTranslucent" />
+        <activity
+            android:name=".activity.SobotOnlineExitActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:launchMode="singleTop"
+            android:theme="@style/AppThemeDialogIsTranslucent" />
+        <activity
+            android:name=".activity.SobotUserInfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:theme="@style/sobot_activity_def_theme"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".activity.OnlineWebViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/sobot_activity_def_theme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".dialog.OnlineCustomPopActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:theme="@style/AppThemeDialogIsTranslucent" />
+        <activity
+            android:name=".activity.SobotCameraActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:theme="@style/sobot_activity_def_theme"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".activity.SobotPhotoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:theme="@style/AppThemeDialogIsTranslucent" />
+        <activity
+            android:name=".activity.SobotVideoActivity"
+            android:theme="@style/sobot_activity_def_theme"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".activity.SobotQuickReplyActivity"
+            android:theme="@style/sobot_activity_def_theme"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".activity.SobotIntelligenceReplyActivity"
+            android:theme="@style/sobot_activity_def_theme"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".activity.SobotServiceSummaryActivity"
+            android:theme="@style/sobot_activity_def_theme"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".dialog.SobotOnlineUnitTypeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:theme="@style/AppThemeDialogIsTranslucent" />
+        <activity
+            android:name=".dialog.OnlineEnterPriseSearchActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:theme="@style/AppThemeDialogIsTranslucent" />
+        <activity
+            android:name=".activity.SobotCategorySmallActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:theme="@style/AppThemeDialogIsTranslucent" />
+        <activity
+            android:name=".dialog.OnlineSummarySearchActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:theme="@style/AppThemeDialogIsTranslucent" />
+        <activity
+            android:name=".activity.SobotFileDetailActivity"
+            android:theme="@style/sobot_activity_def_theme"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize" />
+        <activity
+            android:name=".activity.SobotOnlineTransfeReviewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:theme="@style/AppThemeDialogIsTranslucent" />
+        <activity
+            android:name=".activity.OnlineChangLoginStatusActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|touchscreen|navigation|locale|fontScale|uiMode|screenLayout|smallestScreenSize"
+            android:theme="@style/AppThemeDialogIsTranslucent" />
+
+        <service
+            android:name="com.sobot.onlinecommon.socket.channel.SobotTCPServer"
+            android:exported="true"
+            android:label="SobotTCPServer" />
+        <service
+            android:name="com.sobot.onlinecommon.socket.channel.SobotTCPServer$AssistService"
+            android:exported="true"
+            android:label="AssistService" />
+
+        <provider
+            android:name=".provider.SobotFileProvider"
+            android:authorities="${applicationId}.sobot_fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/sobot_provider_paths" />
+        </provider>
+    </application>
+
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- Permission for Unit Test -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+</manifest>

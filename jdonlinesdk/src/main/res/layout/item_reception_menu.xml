@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_reception_menu_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/sobot_online_gray_summary_color"
+        android:gravity="center"
+        android:minWidth="90dp"
+        android:padding="6dp"
+        android:text="@string/sobot_online_fuwuzongjie"
+        android:textColor="@color/sobot_online_white_color" />
+
+    <TextView
+        android:id="@+id/tv_reception_menu_star_target"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/sobot_online_yellow_star_target_color"
+        android:gravity="center"
+        android:minWidth="60dp"
+        android:padding="6dp"
+        android:text="@string/online_mark"
+        android:textColor="@color/sobot_online_white_color" />
+
+    <TextView
+        android:id="@+id/tv_reception_menu_close"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/sobot_online_red_close_color"
+        android:gravity="center"
+        android:minWidth="60dp"
+        android:padding="6dp"
+        android:text="@string/online_close"
+        android:textColor="@color/sobot_online_white_color" />
+</LinearLayout>

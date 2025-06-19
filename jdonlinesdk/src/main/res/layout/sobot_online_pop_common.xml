@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_online_pop_search_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sobot_shape_online_pop_header"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="50dp">
+
+
+    <include layout="@layout/sobot_online_pop_header" />
+
+    <View
+        android:id="@+id/view_online_search_split"
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="@color/sobot_online_line_color"
+        android:visibility="gone" />
+
+
+    <EditText
+        android:id="@+id/et_online_search_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/sobot_shape_online_gray_bg"
+        android:drawableLeft="@drawable/search_online_search_icon"
+        android:drawablePadding="8dp"
+        android:singleLine="true"
+        android:hint="@string/sobot_search"
+        android:paddingLeft="12dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/sobot_online_common_gray1"
+        android:textSize="@dimen/sobot_sp_14"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="@color/sobot_online_line_color" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/srv_online_common_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:layout_marginBottom="50dp"></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

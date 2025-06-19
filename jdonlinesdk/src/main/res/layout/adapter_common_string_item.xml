@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/tv_common_pop_item_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/sobot_online_common_gray2"
+            android:textSize="@dimen/sobot_sp_15" />
+
+        <ImageView
+            android:id="@+id/iv_common_pop_item_select"
+            android:layout_width="14dp"
+            android:layout_height="11dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/sobot_online_correct_icon"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sobot_line_height"
+        android:background="@color/sobot_online_line_color" />
+
+</LinearLayout>

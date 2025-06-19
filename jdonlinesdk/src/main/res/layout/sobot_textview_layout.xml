@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/online_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/sobot_online_transparent"
+    android:padding="15dp"
+    android:textColor="@color/sobot_online_common_gray3"
+    android:textSize="@dimen/sobot_sp_15" />
+
+

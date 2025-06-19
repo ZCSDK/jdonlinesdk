@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sobot_online_app_bg_color">
+
+    <View
+        android:id="@+id/v_online_split"
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="@color/sobot_online_line_color" />
+
+    <com.sobot.online.weight.recyclerview.swipemenu.SobotSwipeMenuRecyclerView
+        android:id="@+id/ssmrv_online_inside_knowledge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/v_online_split"
+        android:background="@color/sobot_online_app_bg2_color"></com.sobot.online.weight.recyclerview.swipemenu.SobotSwipeMenuRecyclerView>
+
+</RelativeLayout>

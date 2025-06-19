@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_sobot_online_base_header_root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/sobot_online_base_header_height"
+    android:background="@color/sobot_app_status_bar_color">
+
+    <TextView
+        android:id="@+id/tv_sobot_online_base_header_left"
+        android:layout_width="30dp"
+        android:layout_height="38dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:drawableLeft="@drawable/sobot_online_back_icon"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@color/sobot_online_base_header_left_wz_color" />
+
+    <TextView
+        android:id="@+id/tv_sobot_online_base_header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/sobot_online_base_header_title_color"
+        android:textSize="@dimen/sobot_online_base_header_title_sp" />
+
+    <TextView
+        android:id="@+id/tv_sobot_online_base_header_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@color/sobot_online_base_header_right_wz_color"
+        android:textSize="@dimen/sobot_sp_15"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sobot_line_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/sobot_online_base_header_split_color" />
+
+</RelativeLayout>

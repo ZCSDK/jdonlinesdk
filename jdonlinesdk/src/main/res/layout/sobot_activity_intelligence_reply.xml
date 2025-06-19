@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sobot_online_app_bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/sobot_online_base_header" />
+
+    <EditText
+        android:id="@+id/et_online_search_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/sobot_shape_online_gray_bg"
+        android:drawableLeft="@drawable/search_online_search_icon"
+        android:drawablePadding="8dp"
+        android:hint="@string/online_search_keyword"
+        android:paddingLeft="12dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:singleLine="true"
+        android:textColor="@color/sobot_online_common_gray1"
+        android:textSize="@dimen/sobot_sp_14" />
+
+    <com.sobot.online.weight.SobotPagerSlidingTab
+        android:id="@+id/sobot_online_tab_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        app:curTabTextColor="@color/sobot_online_nav_sel_tx_color"
+        app:indicatorColor="@color/sobot_online_nav_indicator_color"
+        app:tabTextColor="@color/sobot_online_nav_tx_color" />
+
+    <com.sobot.online.weight.SobotNoScrollViewPager
+        android:id="@+id/sobot_online_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

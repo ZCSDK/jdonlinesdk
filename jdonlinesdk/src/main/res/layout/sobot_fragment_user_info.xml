@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/sobot_online_app_bg_color"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp">
+
+            <TextView
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/online_partnerId"
+                android:textColor="@color/sobot_online_common_gray1"
+                android:textSize="@dimen/sobot_sp_14" />
+
+            <TextView
+                android:id="@+id/tv_user_partnerId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="--"
+                android:textColor="@color/sobot_online_common_gray1"
+                android:textSize="@dimen/sobot_sp_14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sobot_line_height"
+            android:background="@color/sobot_online_line_color" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp">
+
+            <TextView
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/online_visitor_id"
+                android:textColor="@color/sobot_online_common_gray1"
+                android:textSize="@dimen/sobot_sp_14" />
+
+            <TextView
+                android:id="@+id/tv_visitor_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="--"
+                android:textColor="@color/sobot_online_common_gray1"
+                android:textSize="@dimen/sobot_sp_14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sobot_line_height"
+            android:background="@color/sobot_online_line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp">
+
+            <TextView
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/online_nickname"
+                android:textColor="@color/sobot_online_common_gray1"
+                android:textSize="@dimen/sobot_sp_14" />
+
+            <EditText
+                android:id="@+id/et_user_nickname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/online_please_input"
+                android:textColor="@color/sobot_online_common_gray1"
+                android:textColorHint="@color/sobot_online_common_gray3"
+                android:textSize="@dimen/sobot_sp_14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sobot_line_height"
+            android:background="@color/sobot_online_line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp">
+
+            <TextView
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/online_name"
+                android:textColor="@color/sobot_online_common_gray1"
+                android:textSize="@dimen/sobot_sp_14" />
+
+            <EditText
+                android:id="@+id/et_user_realname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/online_please_input"
+                android:textColor="@color/sobot_online_common_gray1"
+                android:textColorHint="@color/sobot_online_common_gray3"
+                android:textSize="@dimen/sobot_sp_14" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sobot_line_height"
+            android:background="@color/sobot_online_line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp">
+
+            <TextView
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/online_laiyuan"
+                android:textColor="@color/sobot_online_common_gray1"
+                android:textSize="@dimen/sobot_sp_14" />
+
+            <TextView
+                android:id="@+id/tv_user_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="--"
+                android:textColor="@color/sobot_online_common_gray1"
+                android:textSize="@dimen/sobot_sp_14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sobot_line_height"
+            android:background="@color/sobot_online_line_color" />
+
+        <LinearLayout
+            android:id="@+id/ll_user_enterprise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp">
+
+            <TextView
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/online_company"
+                android:textColor="@color/sobot_online_common_gray5"
+                android:textSize="@dimen/sobot_sp_14" />
+
+            <TextView
+                android:id="@+id/tv_user_enterpriseName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/online_please_choose"
+                android:textColor="@color/sobot_online_common_gray1"
+                android:textColorHint="@color/sobot_online_common_gray3"
+                android:textSize="@dimen/sobot_sp_14" />
+
+            <ImageView
+                android:layout_width="6dp"
+                android:layout_height="10dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/sobot_online_right_arrow" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sobot_line_height"
+            android:background="@color/sobot_online_line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp">
+
+            <TextView
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/online_phone"
+                android:textColor="@color/sobot_online_common_gray5"
+                android:textSize="@dimen/sobot_sp_14" />
+
+            <EditText
+                android:id="@+id/et_user_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/online_please_input"
+                android:textColor="@color/sobot_online_common_gray1"
+                android:textColorHint="@color/sobot_online_common_gray3"
+                android:textSize="@dimen/sobot_sp_14" />
+
+            <ImageView
+                android:id="@+id/iv_add_user_phone"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="13dp"
+                android:padding="2dp"
+                android:src="@drawable/sobot_add_icon" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_add_user_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"></LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sobot_line_height"
+            android:background="@color/sobot_online_line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp">
+
+            <TextView
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/online_email"
+                android:textColor="@color/sobot_online_common_gray5"
+                android:textSize="@dimen/sobot_sp_14" />
+
+            <EditText
+                android:id="@+id/et_user_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/online_please_input"
+                android:textColor="@color/sobot_online_common_gray1"
+                android:textColorHint="@color/sobot_online_common_gray3"
+                android:textSize="@dimen/sobot_sp_14" />
+
+            <ImageView
+                android:id="@+id/iv_add_user_email"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="13dp"
+                android:padding="2dp"
+                android:src="@drawable/sobot_add_icon" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_add_user_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"></LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sobot_line_height"
+            android:background="@color/sobot_online_line_color" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_user_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="12dp"
+            android:visibility="gone"
+            android:paddingBottom="12dp">
+
+            <TextView
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/online_city"
+                android:textColor="@color/sobot_online_common_gray5"
+                android:textSize="@dimen/sobot_sp_14" />
+
+
+            <TextView
+                android:id="@+id/tv_user_city"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/online_please_choose"
+                android:textColor="@color/sobot_online_common_gray1"
+                android:textColorHint="@color/sobot_online_common_gray3"
+                android:textSize="@dimen/sobot_sp_14" />
+
+            <ImageView
+                android:layout_width="6dp"
+                android:layout_height="10dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/sobot_online_right_arrow" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sobot_line_height"
+            android:background="@color/sobot_online_line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp">
+
+            <TextView
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="QQ"
+                android:textColor="@color/sobot_online_common_gray5"
+                android:textSize="@dimen/sobot_sp_14" />
+
+
+            <EditText
+                android:id="@+id/et_user_qq"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/online_please_input"
+                android:textColor="@color/sobot_online_common_gray1"
+                android:textColorHint="@color/sobot_online_common_gray3"
+                android:textSize="@dimen/sobot_sp_14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sobot_line_height"
+            android:background="@color/sobot_online_line_color"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/online_user_lable"
+                android:textColor="@color/sobot_online_common_gray5"
+                android:textSize="@dimen/sobot_sp_14" />
+
+            <TextView
+                android:id="@+id/tv_user_lable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/online_please_choose"
+                android:textColor="@color/sobot_online_common_gray1"
+                android:textColorHint="@color/sobot_online_common_gray3"
+                android:textSize="@dimen/sobot_sp_14" />
+
+            <ImageView
+                android:layout_width="6dp"
+                android:layout_height="10dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/sobot_online_right_arrow" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sobot_line_height"
+            android:background="@color/sobot_online_line_color" />
+
+        <LinearLayout
+            android:id="@+id/ll_user_grade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp">
+
+            <TextView
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/online_user_grade"
+                android:textColor="@color/sobot_online_common_gray5"
+                android:textSize="@dimen/sobot_sp_14" />
+
+            <TextView
+                android:id="@+id/tv_user_grade"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:hint="@string/online_please_choose"
+                android:textColor="@color/sobot_online_common_gray1"
+                android:textColorHint="@color/sobot_online_common_gray3"
+                android:textSize="@dimen/sobot_sp_14" />
+
+            <ImageView
+                android:layout_width="6dp"
+                android:layout_height="10dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/sobot_online_right_arrow" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v_user_vip_grade_split"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sobot_line_height"
+            android:background="@color/sobot_online_line_color"
+            android:visibility="gone"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_user_vip_grade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/online_vip_grade"
+                android:textColor="@color/sobot_online_common_gray5"
+                android:textSize="@dimen/sobot_sp_14" />
+
+            <TextView
+                android:id="@+id/tv_user_vip_grade"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:hint="@string/online_please_choose"
+                android:textColor="@color/sobot_online_common_gray1"
+                android:textColorHint="@color/sobot_online_common_gray3"
+                android:textSize="@dimen/sobot_sp_14" />
+
+            <ImageView
+                android:layout_width="6dp"
+                android:layout_height="10dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/sobot_online_right_arrow" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sobot_line_height"
+            android:background="@color/sobot_online_line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp">
+
+            <TextView
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/online_remark"
+                android:textColor="@color/sobot_online_common_gray5"
+                android:textSize="@dimen/sobot_sp_14" />
+
+            <EditText
+                android:id="@+id/et_user_remark"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/online_please_input"
+                android:textColor="@color/sobot_online_common_gray1"
+                android:textColorHint="@color/sobot_online_common_gray3"
+                android:textSize="@dimen/sobot_sp_14" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v_work_order_user_cusfield"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sobot_line_height"
+            android:background="@color/sobot_online_line_color"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/work_order_user_cusfield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sobot_line_height"
+            android:background="@color/sobot_online_line_color" />
+
+        <TextView
+            android:id="@+id/tv_sobot_online_save_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="45dp"
+            android:background="@drawable/sobot_shape_online_btn_border_select"
+            android:gravity="center"
+            android:paddingTop="13dp"
+            android:paddingBottom="13dp"
+            android:text="@string/online_save"
+            android:textColor="@color/sobot_online_white_color"
+            android:textSize="@dimen/sobot_sp_16" />
+    </LinearLayout>
+</ScrollView>

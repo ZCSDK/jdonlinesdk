@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_online_pop_transfer_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sobot_shape_online_white_bg"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginLeft="30dp"
+    android:paddingBottom="10dp">
+
+    <include layout="@layout/sobot_online_pop_header" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="@color/sobot_online_line_color" />
+
+    <EditText
+        android:id="@+id/et_online_pop_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/sobot_shape_hollow_border_normal"
+        android:gravity="top"
+        android:maxLines="7"
+        android:minLines="7"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:textColor="@color/sobot_online_common_gray1"
+        android:textColorHint="@color/sobot_online_common_gray3"
+        android:textSize="@dimen/sobot_sp_14" />
+
+
+    <TextView
+        android:id="@+id/tv_online_pop_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/sobot_shape_online_btn_border_select"
+        android:gravity="center"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:text="@string/online_ok"
+        android:textColor="@color/sobot_online_white_color"
+        android:textSize="@dimen/sobot_sp_16" />
+
+    <TextView
+        android:id="@+id/tv_online_pop_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="80dp"
+        android:paddingTop="20dp"
+        android:paddingRight="80dp"
+        android:paddingBottom="20dp"
+        android:text="@string/online_cancle"
+        android:textColor="@color/sobot_online_common_gray1"
+        android:textSize="@dimen/sobot_sp_16" />
+
+</LinearLayout>

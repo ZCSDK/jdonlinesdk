@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/sobot_msg_top_bottom_style"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_msg_item_audio_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.sobot.online.weight.image.SobotRCImageView
+            android:id="@+id/srcv_msg_item_left_user_avatar"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sobot_yonghu_header_def"
+            app:round_as_circle="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_left_msg_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="@dimen/sobot_chat_adapter_msg_content_margin"
+                android:textColor="@color/sobot_msg_time_color"
+                android:textSize="@dimen/sobot_sp_12" />
+
+            <LinearLayout
+                android:id="@+id/ll_audio_left"
+                style="@style/sobot_msg_left_content_ll_bg_style"
+                android:gravity="center_vertical">
+
+
+                <ImageView
+                    android:id="@+id/iv_msg_item_audio_left_play"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sobot_pop_voice_receive_anime_3" />
+
+                <TextView
+                    android:id="@+id/tv_msg_item_audio_left_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/sobot_left_msg_text_color"
+                    android:textSize="@dimen/sobot_sp_14" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_msg_item_audio_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <!-- 我的名称 -->
+        <com.sobot.online.weight.image.SobotRCImageView
+            android:id="@+id/srcv_msg_item_right_user_avatar"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="bottom"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sobot_service_header_def"
+            app:round_as_circle="true" />
+
+        <LinearLayout
+            android:id="@+id/sobot_linear_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_toStartOf="@+id/srcv_msg_item_right_user_avatar"
+            android:layout_toLeftOf="@+id/srcv_msg_item_right_user_avatar">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp">
+
+                <ImageView
+                    android:id="@+id/iv_msg_item_send_failure"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/sobot_re_send_selector"
+                    android:contentDescription="@null"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+                <!-- 消息的状态 -->
+
+                <ProgressBar
+                    android:id="@+id/iv_msg_item_send_loading"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:indeterminateDrawable="@drawable/sobot_progressbar_circle_loading"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/sobot_ll_voice_layout"
+                style="@style/sobot_msg_right_content_ll_bg_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:gravity="center_vertical|end"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/sobot_voiceTimeLong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="00:00"
+                    android:textColor="@color/sobot_white"
+                    android:textSize="@dimen/sobot_sp_14"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/sobot_iv_voice"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/sobot_pop_voice_send_anime_3"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
